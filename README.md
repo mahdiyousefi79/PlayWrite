@@ -1,14 +1,14 @@
 
 # comments to run:
 
-# Runs all tests on all browsers in headless mode
+# runs all tests on all browsers in headless mode
 npx playwright test
 
 # Runs a specific test file (HomePageTest.spec.js)
 playwriteAutomation % npx playwright test --project=chromium --headed  HomePageTest.spec.js
 
 # Runs multiple specific test files
-npx playwright test HomePageTest.spec.js AnotherTest.spec.js
+npx playwright test HomePageTest.spec.js example.spec.js
 
 # Runs tests with a specific title
 npx playwright test -g "test title"
