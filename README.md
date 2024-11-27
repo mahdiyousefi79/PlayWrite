@@ -23,7 +23,7 @@ npx playwright test --headed
 npx playwright test --debug
 
 # Runs a specific test file (HomePageTest.spec.js) in debug mode
-npx playwright test HomePageTest.spec.js --debug
+npx playwright test HomePageTest.spec.js --debug --headed --project=chromium
 
 
 
