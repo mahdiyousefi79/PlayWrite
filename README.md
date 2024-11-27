@@ -5,7 +5,7 @@
 npx playwright test
 
 # Runs a specific test file (HomePageTest.spec.js)
-playwriteAutomation % npx playwright test --project=chromium --headed  HomePageTest.spec.js
+npx playwright test --project=chromium --headed --reporter=html HomePageTest.spec.js
 
 # Runs multiple specific test files
 npx playwright test HomePageTest.spec.js example.spec.js
