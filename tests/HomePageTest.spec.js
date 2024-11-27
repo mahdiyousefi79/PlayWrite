@@ -6,7 +6,7 @@ test('Home Page - Google', async ({ page }) => {
   await page.goto('https://www.google.com/');
 
   // Get the page title
-  const pageTitle = await page.title(); // Wait for the title to resolve
+  const pageTitle = await page.title(); 
 
   // Log the actual title
   console.log('Page title is:', pageTitle);

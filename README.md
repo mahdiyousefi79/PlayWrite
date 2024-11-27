@@ -1,24 +1,4 @@
 
-## Git Workflow for Playwright Automation
-
-### Steps for Committing and Pushing Changes
-
-From now on, whenever you make changes and commit them, you can use the following commands:
-
-```bash
-git add .
-git commit -m "Your commit message"
-git push
-
-git pull origin main
-
-
-
-
-
-
-
-
 # comments to run:
 
 # Runs all tests on all browsers in headless mode
