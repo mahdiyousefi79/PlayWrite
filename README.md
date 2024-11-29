@@ -5,7 +5,7 @@
 npx playwright test
 
 # Runs a specific test file (HomePageTest.spec.js)
-npx playwright test --project=chromium --headed --reporter=html HomePageTest.spec.js
+npx playwright test --project=chromium --headed --reporter=html LocatingMultipleElements.spec.js --debug
 
 # Runs multiple specific test files
 npx playwright test HomePageTest.spec.js example.spec.js
@@ -20,7 +20,7 @@ npx playwright test --project=chromium
 npx playwright test --headed
 
 # Runs tests in debug mode
-npx playwright test --debug
+npx playwright test 
 
 # Runs a specific test file (HomePageTest.spec.js) in debug mode
 npx playwright test HomePageTest.spec.js --debug --headed --project=chromium
