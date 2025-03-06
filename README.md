@@ -27,3 +27,7 @@ npx playwright test HomePageTest.spec.js --debug --headed --project=chromium
 
 
 
+
+# CodeGen
+npx playwright codegen
+npx playwright codegen --help
