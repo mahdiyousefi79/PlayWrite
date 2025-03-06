@@ -36,7 +36,8 @@ A link role indicates an anchor (<a>) element.
 A heading role represents headers (like <h1>, <h2>, etc.).
 */
 
-await page.getByRole('button',{type:'submit'}).click()
+// await page.getByRole('button',{type:'submit'}).click()
+await page.getByRole('button',{name:'Login'}).click()
 
 
 //page.getByText() to locate by text content.
