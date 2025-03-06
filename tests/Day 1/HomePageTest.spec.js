@@ -1,3 +1,10 @@
+
+
+// test('Home Page - Google', async ({ page }) => {...}): This defines a test case. The string 'Home Page 
+// - Google' is the name of the test, which will show up when the test runs.
+
+//The async ({ page }) => {...} is an asynchronous arrow function where { page } is a context parameter passed in by Playwright
+
 const { test, expect } = require('@playwright/test');
 
 test('Home Page - Google', async ({ page }) => {

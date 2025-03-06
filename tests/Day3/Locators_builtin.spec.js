@@ -18,9 +18,9 @@ await page.goto('https://opensource-demo.orangehrmlive.com/web/index.php/auth/lo
 
 
 //page.getByAltText() to locate an element, usually image, by its text alternative.
+// const logo = await page.locator('xpath = //*[@id="app"]/div[1]/div/div[1]/div/div[1]/img')
 const logo = await page.getByAltText('company-brandin')
 await expect(logo).toBeVisible()
-
 // await expect(page.getByAltText('company-branding')).toBeVisible()
 
 
@@ -30,6 +30,12 @@ await page.getByPlaceholder('Password').fill("admin123")
 
 
 //page.getByRole() to locate by explicit and implicit accessibility attributes.
+/*
+A button role indicates a clickable button element.
+A link role indicates an anchor (<a>) element.
+A heading role represents headers (like <h1>, <h2>, etc.).
+*/
+
 await page.getByRole('button',{type:'submit'}).click()
 
 
@@ -38,8 +44,10 @@ const name = await page.locator("//p[@class = 'oxd-userdropdown-name']").textCon
 await expect(await page.getByText(name)).toBeVisible()
 
 
+//looking for dashboard text
+await expect(page.locator('//h6[text()="Dashboard"]')).toBeVisible();
+
+
 
 await page.close()
-
-
 })
