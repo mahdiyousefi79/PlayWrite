@@ -5,7 +5,7 @@
 
 //The async ({ page }) => {...} is an asynchronous arrow function where { page } is a context parameter passed in by Playwright
 
-const { test, expect } = require('@playwright/test');
+const { test, expect } = require('@playwright/test');  // we have 2 functions test and expect
 
 test('Home Page - Google', async ({ page }) => {
 

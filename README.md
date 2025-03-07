@@ -25,7 +25,10 @@ npx playwright test
 # Runs a specific test file (HomePageTest.spec.js) in debug mode
 npx playwright test HomePageTest.spec.js --debug --headed --project=chromium
 
-
+git status 
+git add .  
+git commit -m "Update last 03/05/2025"  
+git push origin main          
 
 
 # CodeGen
