@@ -44,5 +44,4 @@ expect(optionsArray).toEqual(expectedOptionNames);
 
 page.close()
 
-
 })
